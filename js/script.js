@@ -32,5 +32,9 @@ printMessage('Twój ruch to: ' + playerMove);
 
 if( computerMove == 'kamień' && playerMove == 'papier'){
   printMessage('Ty wygrywasz!');
-}
+} else if ( computerMove == 'papier' && playerMove == 'nożyce'){
+  printMessage('Ty wygrywasz!')
+} else (computerMove == 'nożyce' && playerMove == 'kamień'){
+  printMessage('Ty wygrywasz')
+} 
 
