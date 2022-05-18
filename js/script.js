@@ -49,3 +49,15 @@ function playGame(playerInput) {
 }
 
 playGame(3);
+
+document.getElementById("play-rock").addEventListener("click", function () {
+  printMessage("Kamień");
+});
+
+document.getElementById("play-paper").addEventListener("click", function () {
+  printMessage("Papier");
+});
+
+document.getElementById("play-scissors").addEventListener("click", function () {
+  printMessage("Nożyce");
+});
