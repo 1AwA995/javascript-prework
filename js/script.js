@@ -1,4 +1,5 @@
 function playGame(playerInput) {
+  clearMessages();
   let randomNumber = Math.floor(Math.random() * 3 + 1);
 
   console.log("Wylosowana liczba to: " + randomNumber);
@@ -51,13 +52,13 @@ function playGame(playerInput) {
 playGame(3);
 
 document.getElementById("play-rock").addEventListener("click", function () {
-  printMessage("Kamień");
+  playGame(1);
 });
 
 document.getElementById("play-paper").addEventListener("click", function () {
-  printMessage("Papier");
+  playGame(2);
 });
 
 document.getElementById("play-scissors").addEventListener("click", function () {
-  printMessage("Nożyce");
+  playGame(3);
 });
